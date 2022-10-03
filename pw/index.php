@@ -24,6 +24,9 @@ $buku = query("SELECT * FROM buku");
     <table class="table table-info table-striped table-bordered border-info">
       <thead>
         <tr>
+          <td colspan="5"> Daftar Buku</td>
+        </tr>
+        <tr>
           <th>Judul</th>
           <th>Penulis</th>
           <th>Penerbit</th>
@@ -33,7 +36,6 @@ $buku = query("SELECT * FROM buku");
       </thead>
       <tbody>
         <?php foreach ($buku as $b) : ?>
-
           <tr>
             <td><?= $b['judul']; ?></td>
             <td><?= $b['penulis']; ?></td>
