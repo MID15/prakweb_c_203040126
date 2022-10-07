@@ -11,6 +11,7 @@ class About extends Controller
     $this->view('about/index', $data);
     $this->view('templates/footer');
   }
+
   public function page()
   {
     $data['judul'] = 'Page';
